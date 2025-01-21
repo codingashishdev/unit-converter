@@ -1,0 +1,35 @@
+/* * {
+    background-color: black;
+    color: white;
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .length {
+    display: flex;
+    flex-direction: column;
+}
+
+.container ul {
+    list-style: none;
+    display: flex;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+.container ul li a:hover {
+    text-decoration: underline;
+}
+
+button {
+    margin: 10px 0px;
+}

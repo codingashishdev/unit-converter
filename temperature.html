@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <ul>
+            <li><a href="length.html" id="length">Length</a></li>
+            <li><a href="weight.html" id="weight">Weight</a></li>
+            <li><a href="temperature.html" id="temperature">Temperature</a></li>
+        </ul>
+
+        <div class="length weight temperature">
+            Enter the temperature to convert
+            <input type="text" name="temperature" id="temperature">
+
+            Unit to convert from
+            <input type="text" name="convertFrom" id="temperature-to-convert-from">
+
+            Unit to convert to
+            <input type="text" name="convertTo" id="temperature-to-convert-to">
+
+            <button type="button">Convert</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
