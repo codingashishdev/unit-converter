@@ -17,17 +17,38 @@
             <li><a href="temperature.html" id="temperature">Temperature</a></li>
         </ul>
 
-        <div class="length weight temperature">
+        <div class="length">
             Enter the length to convert
-            <input type="text" name="length" id="length">
+            <input type="text" name="length" id="length-value">
 
-            Unit to convert from
-            <input type="text" name="convertFrom" id="length-to-convert-from">
+            unit to convert from
+            <select name="length-unit-to-convert-from" required>
+                <!-- </select> -->
+                <option value="">Select an option</option>
+                <option value="millimeter">millimeter</option>
+                <option value="centimeter">centimeter</option>
+                <option value="meter">meter</option>
+                <option value="kilometer">kilometer</option>
+                <option value="inch">inch</option>
+                <option value="foot">foot</option>
+                <option value="yard">yard</option>
+                <!-- </select> -->
+            </select>
 
             Unit to convert to
-            <input type="text" name="convertTo" id="length-to-convert-to">
+            <select name="length-unit-to-convert-to" required>
+                <option value="">Select an option</option>
+                <option value="millimeter">millimeter</option>
+                <option value="centimeter">centimeter</option>
+                <option value="meter">meter</option>
+                <option value="kilometer">kilometer</option>
+                <option value="inch">inch</option>
+                <option value="foot">foot</option>
+                <option value="yard">yard</option>
+                <option value="mile">mile</option>
+            </select>
 
-            <button type="submit" id="btn">Convert</button>
+            <button type="submit" class="btn">Convert</button>
         </div>
     </div>
 

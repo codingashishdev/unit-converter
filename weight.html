@@ -17,17 +17,31 @@
             <li><a href="temperature.html" id="temperature">Temperature</a></li>
         </ul>
 
-        <div class="length weight temperature">
+        <div class="weight">
             Enter the weight to convert
-            <input type="text" name="weight" id="weight">
+            <input type="text" name="weight" id="weight-value">
 
             Unit to convert from
-            <input type="text" name="convertFrom" id="weight-to-convert-from">
+            <select name="weight-unit-to-convert-from" required>
+                <option value="">Select an option</option>
+                <option value="milligram">milligram</option>
+                <option value="gram">gram</option>
+                <option value="kilogram">kilogram</option>
+                <option value="ounce">ounce</option>
+                <option value="pound">pound</option>
+            </select>
 
             Unit to convert to
-            <input type="text" name="convertTo" id="weight-to-convert-to">
+            <select name="weight-unit-to-convert-to" required>
+                <option value="">Select an option</option>
+                <option value="milligram">milligram</option>
+                <option value="gram">gram</option>
+                <option value="kilogram">kilogram</option>
+                <option value="ounce">ounce</option>
+                <option value="pound">pound</option>
+            </select>
 
-            <button type="button">Convert</button>
+            <button type="submit" class="btn">Convert</button>
         </div>
     </div>
 

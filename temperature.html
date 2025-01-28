@@ -17,17 +17,27 @@
             <li><a href="temperature.html" id="temperature">Temperature</a></li>
         </ul>
 
-        <div class="length weight temperature">
+        <div class="temperature">
             Enter the temperature to convert
-            <input type="text" name="temperature" id="temperature">
+            <input type="text" name="temperature" id="temperature-value">
 
             Unit to convert from
-            <input type="text" name="convertFrom" id="temperature-to-convert-from">
+            <select name="temperature-unit-to-convert-from" required>
+                <option value="">Select an option</option>
+                <option value="celsius">celsius</option>
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="kelvin">kelvin</option>
+            </select>
 
             Unit to convert to
-            <input type="text" name="convertTo" id="temperature-to-convert-to">
+            <select name="temperature-unit-to-convert-to" required>
+                <option value="">Select an option</option>
+                <option value="celsius">celsius</option>
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="kelvin">kelvin</option>
+            </select>
 
-            <button type="button">Convert</button>
+            <button type="submit" class="btn">Convert</button>
         </div>
     </div>
 
